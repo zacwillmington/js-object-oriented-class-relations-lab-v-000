@@ -40,6 +40,8 @@ class Trip {
     }
 
     passenger() {
-        return store.passengers.filter(passenger => passenger.id === this.passengerId);
+        const passenger = store.passengers.filter(passenger => passenger.id === this.passengerId);
+
+        return passenger;
     }
 }
