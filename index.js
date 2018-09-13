@@ -17,7 +17,6 @@ class Driver {
 
     passengers() {
         const passengersIds = this.trips().map(trip => trip.passengerId);
-        console.log(passengersIds, store.passengers);
         for (i = 0; i > store.passengers.length; i++){
             console.log(passenger[i]);
             // for(j = ; )
