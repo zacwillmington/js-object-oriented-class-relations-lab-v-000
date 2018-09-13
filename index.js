@@ -16,7 +16,7 @@ class Driver {
     }
 
     passengers() {
-        
+
     }
 
 }
@@ -32,7 +32,9 @@ class Passenger {
         store.passengers.push(this);
     }
 
-    
+    trips(){
+        const trips = store.trips.filter(trip => trip.passengerId === this.id)
+    }
 }
 
 
