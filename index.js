@@ -24,11 +24,11 @@ class Driver {
 
              for(let j = 0; j < passengersIds.length; j++){
                  if (store.passengers[i].id == passengersIds[j]){
-                     passengers.push((store.passengers[i]);
+                     passengers.push(store.passengers[i]);
                  }
              }
         }
-        // return passengers;
+        return passengers;
     }
 
 }
