@@ -38,4 +38,8 @@ class Trip {
             this.passengerId = passenger.id;
         }
     }
+
+    passenger() {
+        store.passengers.filter(passenger => passenger.id === this.passengerId);
+    }
 }
