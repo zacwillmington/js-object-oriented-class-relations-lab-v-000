@@ -44,4 +44,8 @@ class Trip {
 
         return passenger;
     }
+
+    driver() {
+        const driver = store.passengers.find(driver => driver.id === this.driverId);
+    }
 }
