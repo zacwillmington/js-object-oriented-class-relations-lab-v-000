@@ -16,7 +16,7 @@ class Driver {
     }
 
     passengers() {
-        const passengersIds = this.trips().map(trip => trip.passengersId);
+        const passengersIds = this.trips().map(trip => trip.passengerId);
         console.log(passengersIds);
     }
 
