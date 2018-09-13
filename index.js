@@ -11,7 +11,7 @@ class Driver {
     }
 
     trips() {
-        const trip = store.trips.find(trip => trip.id === this.tripId);
+        const trip = store.trips.fitler(trip => trip.id === this.tripId);
 
         return trip;
     }
