@@ -40,10 +40,10 @@ class Passenger {
     drivers(){
         const drivers = [];
         this.trips().forEach(function (trip){
-            
+
             drivers.push(store.drivers.filter(driver => driver.id == trip.driverId));
         });
-        return drivers;
+        return drivers[0];
     }
 }
 
