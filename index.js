@@ -11,7 +11,9 @@ class Driver {
     }
 
     trips() {
-        
+        const trip = store.trips.find(trip => trip.id === this.tripId);
+
+        return trip;
     }
 
 }
