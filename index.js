@@ -17,14 +17,18 @@ class Driver {
 
     passengers() {
         const passengersIds = this.trips().map(trip => trip.passengerId);
-
+        const passengers = [];
+        
         for (let i = 0; i < store.passengers.length; i++){
             console.log(`#${i} of store.passengers ${store.passengers[i].name}`);
 
              for(let j = 0; j < passengersIds.length; j++){
-                console.log(`#${j} of passengersIds ${passengersIds[j]}`);
+                 if (store.passengers[i].id == passengersIds[j]){
+                     passengers.push((store.passengers[i]);
+                 }
              }
         }
+        return passengers;
     }
 
 }
