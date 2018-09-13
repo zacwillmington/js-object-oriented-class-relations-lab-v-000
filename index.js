@@ -20,7 +20,7 @@ class Driver {
         for (let i = 0; i < store.passengers.length; i++){
             console.log(`#${i} of store.passengers ${store.passengers[i].name}`);
              for(let j = 0; j < passengersIds.length; j++){
-                console
+                console.log(`#${i} of passengersIds ${passengersIds[i].name}`);
              }
         }
     }
