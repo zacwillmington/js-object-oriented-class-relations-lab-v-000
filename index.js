@@ -12,7 +12,6 @@ class Driver {
 
     trips() {
         const trip = store.trips.filter(trip => trip.driverId === this.id);
-        
         return trip;
     }
 
