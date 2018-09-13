@@ -41,6 +41,7 @@ class Passenger {
         const drivers = trips.forEach(function (trip){
             store.drivers.filter(driver => driver.id == trip.driverId);
         });
+        return drivers;
     }
 }
 
