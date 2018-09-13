@@ -15,6 +15,10 @@ class Driver {
         return trip;
     }
 
+    passengers() {
+        
+    }
+
 }
 
 
@@ -27,6 +31,8 @@ class Passenger {
         this.id = ++passengerId;
         store.passengers.push(this);
     }
+
+    
 }
 
 
